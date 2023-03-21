@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/tvCurrentSimpleCalcPortrait"
+            android:id="@+id/tvCurrent"
+            android:text="0" />
+
+        <TextView
+            style="@style/tvResultSimpleCalcPortrait"
+            android:id="@+id/tvResult"
+            android:text="0" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout style="@style/rowAdvancedCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="functionOnClick"
+                android:text="sin" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="functionOnClick"
+                android:text="cos" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="functionOnClick"
+                android:text="tan" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="operationOnClick"
+                android:text="%" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="bracketOnClick"
+                android:text="(" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowAdvancedCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="functionOnClick"
+                android:text="ln" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="functionOnClick"
+                android:text="log" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="operationOnClick"
+                android:text="√" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="operationOnClick"
+                android:text="^" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnAdvancedCalcPortrait"
+                android:onClick="bracketOnClick"
+                android:text=")" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowSimpleCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/gray"
+                android:onClick="clearAllOnClick"
+                android:text="AC" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/gray"
+                android:onClick="clearLastOnClick"
+                android:text="C" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/gray"
+                android:onClick="changeSignOnClick"
+                android:text="+/-" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/orange"
+                android:onClick="operationOnClick"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowSimpleCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/orange"
+                android:onClick="operationOnClick"
+                android:text="*" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowSimpleCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/orange"
+                android:onClick="operationOnClick"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowSimpleCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/orange"
+                android:onClick="operationOnClick"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/rowSimpleCalcPortrait">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="numberOnClick"
+                android:text="0"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/dark"
+                android:onClick="dotOnClick"
+                android:text="." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btnSimpleCalcPortrait"
+                android:background="@color/orange"
+                android:onClick="resultOnClick"
+                android:text="="/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
