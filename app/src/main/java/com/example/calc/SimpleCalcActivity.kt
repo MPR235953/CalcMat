@@ -144,14 +144,12 @@ open class SimpleCalcActivity: AppCompatActivity() {
 
     //Done
     fun resultOnClick(view: View){
-        try {
-            val exp = Expression(current)
-            val result: String = java.lang.String.valueOf(exp.calculate())
-            tvResult.setText(result)
+        val exp = Expression(current)
+        val result: String = java.lang.String.valueOf(exp.calculate())
+        if(result == "NaN"){
+            val toast = Toast.makeText(applicationContext, "Invalid Input", Toast.LENGTH_SHORT)
+            toast.show()
         }
-        catch(e: java.lang.Exception){
-            Toast.makeText(this, "Invalid Input", Toast.LENGTH_SHORT).show();
-            clearAllOnClick(view)
-        }
+        tvResult.setText(result)
     }
 }
