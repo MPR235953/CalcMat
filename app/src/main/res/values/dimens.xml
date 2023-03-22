@@ -5,19 +5,19 @@
     <dimen name="btnRadius">5dp</dimen>
 
     <dimen name="calcTitleTextSize">60dp</dimen>
-    <dimen name="simpleButtonHeight">100dp</dimen>
+    <dimen name="simpleButtonHeight">80dp</dimen>
     <dimen name="simpleButtonTextSize">25dp</dimen>
     <dimen name="simpleCurrent">40dp</dimen>
     <dimen name="simpleResult">70dp</dimen>
     <dimen name="simpleButtonMargin">3dp</dimen>
 
-    <dimen name="simpleButtonHeightLand">50dp</dimen>
+    <dimen name="simpleButtonHeightLand">40dp</dimen>
     <dimen name="simpleButtonTextSizeLand">20dp</dimen>
 
-    <dimen name="advancedButtonHeight">50dp</dimen>
+    <dimen name="advancedButtonHeight">40dp</dimen>
     <dimen name="advancedButtonTextSize">20dp</dimen>
 
-    <dimen name="advancedButtonHeightLand">30dp</dimen>
+    <dimen name="advancedButtonHeightLand">20dp</dimen>
     <dimen name="advancedButtonTextSizeLand">15dp</dimen>
 
 </resources>
