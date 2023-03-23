@@ -95,7 +95,7 @@ open class SimpleCalcActivity: AppCompatActivity() {
                 tvCurrent.setText(current)  // set current equation to tv
                 appendToCurrent('-' + split[split.size - 1])  // enter delete last number from equation
             }
-            else if(split[split.size - 1].isDigitsOnly()){
+            else if(split[split.size - 1].toIntOrNull() != null || split[split.size - 1].toFloatOrNull() != null){
                 current = subStr as String  // delete from equation
                 tvCurrent.setText(current)  // set current equation to tv
                 appendToCurrent('-' + split[split.size - 1])
