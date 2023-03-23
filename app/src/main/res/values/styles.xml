@@ -50,6 +50,10 @@
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/simpleCurrent</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <style name="tvResultSimpleCalcPortrait">
@@ -60,6 +64,10 @@
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/simpleResult</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
     </style>
 
 
@@ -90,6 +98,10 @@
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/simpleCurrent</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <style name="tvResultSimpleCalcLand">
@@ -100,6 +112,10 @@
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/simpleResult</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
     </style>
 
 
