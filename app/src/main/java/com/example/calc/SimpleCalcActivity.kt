@@ -72,8 +72,10 @@ open class SimpleCalcActivity: AppCompatActivity() {
         val len: Int = current.length
         if(len == 0 || current == "0")    // if equation is empty just enter minus
             appendToCurrent("-")
-        else if(current.isDigitsOnly()){
-            current = '-' + current
+        else if(current.toIntOrNull() != null || current.toFloatOrNull() != null){
+            if(current[0] == '-')
+                current = current.subSequence(1, current.length) as String
+            else current = '-' + current
             tvCurrent.setText(current)
         }
         else{
