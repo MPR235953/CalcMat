@@ -152,6 +152,6 @@ open class SimpleCalcActivity: AppCompatActivity() {
             val toast = Toast.makeText(applicationContext, "Invalid Input", Toast.LENGTH_SHORT)
             toast.show()
         }
-        tvResult.setText(result)
+        else tvResult.setText(result)
     }
 }
