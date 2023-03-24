@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:background="@drawable/math_theme"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,6 +47,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65"/>
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -56,44 +63,70 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnAbout"
                 style="@style/btnMainPortrait"
-                android:background="@color/dark"
+                app:layout_constraintTop_toBottomOf="@+id/guideline"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
                 android:text="About" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSimple"
                 style="@style/btnMainPortrait"
-                android:background="@color/dark"
+                app:layout_constraintTop_toBottomOf="@+id/guideline"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
                 android:text="Simple" />
 
         </LinearLayout>
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".50"/>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnExit"
                 style="@style/btnMainPortrait"
-                android:background="@color/dark"
+                app:layout_constraintTop_toBottomOf="@+id/guideline2"
+                app:layout_constraintBottom_toTopOf="parent"
                 android:text="Exit" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnAdvanced"
                 style="@style/btnMainPortrait"
-                android:background="@color/dark"
+                app:layout_constraintTop_toBottomOf="@+id/guideline2"
+                app:layout_constraintBottom_toTopOf="parent"
                 android:text="Advanced" />
         </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
